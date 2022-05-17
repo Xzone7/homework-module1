@@ -20,6 +20,11 @@ header {
   background-size: 100%; /* if 1500px - the image will not full fill the background */
 }
 
+#cliffs header {
+  background: no-repeat lightgray url(images/forest_cliff.jpeg);
+  background-size: 100%; /* if 1500px - the image will not full fill the background */
+}
+
 .main-header {
   background-color: rgb(255, 255, 255, 0.8);
   width: 700px;
@@ -295,4 +300,46 @@ td:first-child {
   border: none;
   font-weight: 700;
   font-size: 14px;
+}
+
+/* Cliffs Page */
+.cliffs-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.cliffs-first-row {
+  margin-bottom: 40px;
+}
+
+.cliffs-first-row,
+.cliffs-second-row {
+  display: flex;
+}
+
+.cliffs-first-row img,
+.cliffs-second-row img {
+  height: 300px;
+  width: 500px;
+}
+
+.cliffs-first-row div > div,
+.cliffs-second-row div > div {
+  text-align: center;
+  background-color: #852b1b;
+  color: white;
+  height: 50px;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cliffs-first-row > div,
+.cliffs-second-row > div {
+  margin-right: 50px;
 }
