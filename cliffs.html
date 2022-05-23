@@ -53,21 +53,27 @@
           <div class="cliffs-first-row">
             <div>
               <div><span>West Cliff</span></div>
-              <img src="images/cliff-west-sea.jpeg" alt="Cliff West Sea">
+              <img src="images/cliff-west-sea.jpeg" alt="Cliff West Sea" />
             </div>
             <div>
               <div><span>North Cliff</span></div>
-              <img src="images/cliff-north-mountain.jpeg" alt="Cliff North Mountain">
+              <img
+                src="images/cliff-north-mountain.jpeg"
+                alt="Cliff North Mountain"
+              />
             </div>
           </div>
           <div class="cliffs-second-row">
             <div>
               <div><span>East Cliff</span></div>
-              <img src="images/cliff-east-river.jpeg" alt="Cliff East River">
+              <img src="images/cliff-east-river.jpeg" alt="Cliff East River" />
             </div>
             <div>
               <div><span>South Cliff</span></div>
-              <img src="images/cliff-south-canyon.jpeg" alt="Cliff South Canyon">
+              <img
+                src="images/cliff-south-canyon.jpeg"
+                alt="Cliff South Canyon"
+              />
             </div>
           </div>
         </div>
@@ -75,7 +81,7 @@
 
       <section>
         <ul id="partners">
-          <li class="partner">
+          <!-- <li class="partner">
             <img src="images/partner-bustour.png" alt="Partner Bus Tours" />
           </li>
           <li class="partner">
@@ -104,7 +110,7 @@
           </li>
           <li class="partner">
             <img src="images/partner-tourgroup.png" alt="Partner Tour Group" />
-          </li>
+          </li> -->
         </ul>
       </section>
 
@@ -126,5 +132,35 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      //Create footer image function
+      const footerImageGenerator = () => {
+        let imageList = [];
+        const imageSuffix = [
+          "bustour",
+          "cabinrental",
+          "campingadv",
+          "collegetours",
+          "rentalbike",
+          "tourgroup",
+        ];
+        const openList = "<li class='partner'>";
+        const closeList = "</li>";
+
+        //More concise way to write it
+        //Understood what inclass-demo did were for the best practice purpose
+        for (let i = 0; i < 6; i++) {
+          imageList = [
+            ...imageList,
+            `${openList}<img src="images/partner-${imageSuffix[i]}.png" alt="Partner Tour Group" />${closeList}`,
+          ];
+        }
+
+        document.getElementById("partners").innerHTML = imageList.join("");
+      };
+
+      footerImageGenerator();
+    </script>
   </body>
 </html>
