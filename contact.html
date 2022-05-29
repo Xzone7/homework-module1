@@ -90,6 +90,16 @@
               <textarea></textarea>
             </div>
 
+            <!-- Random Codes -->
+            <div class="randomcode">
+              <input
+                type="text"
+                name="randomcode"
+                placeholder="Enter characters"
+              />
+              <p id="codes"></p>
+            </div>
+
             <div class="button">
               <input type="submit" value="Inquire" />
             </div>
@@ -151,34 +161,9 @@
       </footer>
     </div>
 
-    <script>
-      //Create footer image function
-      const footerImageGenerator = () => {
-        let imageList = [];
-        const imageSuffix = [
-          "bustour",
-          "cabinrental",
-          "campingadv",
-          "collegetours",
-          "rentalbike",
-          "tourgroup",
-        ];
-        const openList = "<li class='partner'>";
-        const closeList = "</li>";
+    <script src="js/randomcodes.js"></script>
 
-        //More concise way to write it
-        //Understood what inclass-demo did were for the best practice purpose
-        for (let i = 0; i < 6; i++) {
-          imageList = [
-            ...imageList,
-            `${openList}<img src="images/partner-${imageSuffix[i]}.png" alt="Partner Tour Group" />${closeList}`,
-          ];
-        }
-
-        document.getElementById("partners").innerHTML = imageList.join("");
-      };
-
-      footerImageGenerator();
-    </script>
+    <!-- Partners -->
+    <script src="js/site_scripts.js"></script>
   </body>
 </html>

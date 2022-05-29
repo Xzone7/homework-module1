@@ -305,13 +305,32 @@ td:first-child {
 }
 
 #contact .button input {
-  background: #4977d1;
+  /* background: #4977d1; */
   color: #fff;
   width: 130px;
   height: 35px;
   border: none;
   font-weight: 700;
   font-size: 14px;
+}
+
+#contact .randomcode {
+  display: flex;
+  justify-content: right;
+  width: 506px;
+  margin-bottom: 10px;
+}
+
+#contact .randomcode input {
+  height: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#contact .randomcode #codes {
+  margin: 0;
+  background: rgb(168, 168, 168);
+  padding: 15px 10px 15px 10px;
 }
 
 /* Cliffs Page */
