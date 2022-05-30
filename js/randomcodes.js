@@ -19,8 +19,31 @@ function generateCode() {
 document.getElementById("codes").innerHTML = generateCode();
 
 // Disable Button
-function disableButton() {
-  document.getElementById("submit").disabled = true;
+function disableButton(btnValue) {
+  const submitButton = document.getElementById("submit");
+  submitButton.disabled = btnValue;
+  if (btnValue) {
+    submitButton.style.backgroundColor = "rgba(73, 119, 209, 0.3)";
+    submitButton.style.color = "rgba(255, 255, 255, 0.5)";
+  } else {
+    submitButton.style.backgroundColor = "rgba(73, 119, 209, 1)";
+    submitButton.style.color = "rgba(255, 255, 255, 1)";
+  }
 }
 
-disableButton();
+function verificationCodeListener() {
+  const codebox = document.getElementById("codeentered");
+  codebox.addEventListener("input", (event) => {
+    const getCode = event.target.value;
+    const charset1 = getCode.trim();
+    const charset2 = document.getElementById("codes").innerHTML.trim();
+
+    if (charset1.length === charset2.length && charset1 === charset2) {
+      disableButton(false);
+    } else {
+      disableButton(true);
+    }
+  });
+}
+
+verificationCodeListener();
