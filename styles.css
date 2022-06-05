@@ -237,6 +237,12 @@ td:first-child {
   background: #bde1ff;
 }
 
+.activitiesCell {
+  background-color: greenyellow;
+  font-weight: bold;
+  color: white;
+}
+
 /* Contact Page Main */
 .contactinfo {
   margin-top: 30px;
