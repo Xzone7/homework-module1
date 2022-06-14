@@ -9,15 +9,18 @@ const footerImageGenerator = () => {
     "rentalbike",
     "tourgroup",
   ];
-  const openList = "<li class='partner'>";
+  const openList = "<li class='partner col-12 col-sm-6 col-md-4 col-lg-2 py-3'>";
   const closeList = "</li>";
+
+  const openDiv = "<div class='image-wrapper'>";
+  const closeDiv = "</div>";
 
   //More concise way to write it
   //Understood what inclass-demo did were for the best practice purpose
   for (let i = 0; i < 6; i++) {
     imageList = [
       ...imageList,
-      `${openList}<img src="images/partner-${imageSuffix[i]}.png" alt="Partner Tour Group" />${closeList}`,
+      `${openList}${openDiv}<img src="images/partner-${imageSuffix[i]}.png" alt="Partner Tour Group" />${closeDiv}${closeList}`,
     ];
   }
 

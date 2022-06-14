@@ -7,42 +7,39 @@ header {
 
 #home header {
   background: no-repeat lightgray url(images/cliff_ocean.jpg);
-  background-size: 100%; /* if 1500px - the image will not full fill the background */
+  background-size: cover;
 }
 
 #activities header {
   background: no-repeat lightgray url(images/runfly.jpeg) 0 -220px;
-  background-size: 100%; /* if 1500px - the image will not full fill the background */
+  background-size: cover;
 }
 
 #contact header {
   background: no-repeat lightgray url(images/cliff_rock.jpeg);
-  background-size: 100%; /* if 1500px - the image will not full fill the background */
+  background-size: cover;
 }
 
 #cliffs header {
   background: no-repeat lightgray url(images/forest_cliff.jpeg);
-  background-size: 100%; /* if 1500px - the image will not full fill the background */
+  background-size: cover;
 }
 
 .main-header {
   background-color: rgb(255, 255, 255, 0.8);
-  width: 700px;
+  width: 80%;
   margin: 2em auto 0 auto;
-  min-height: 100px;
-  height: 100px;
 }
 
 .main-header .logo img {
-  width: 100px;
   height: 100px;
+  width: 100px;
   margin: 0 2em 0 0;
   float: left;
 }
 
 /* Navigation */
 .main-menu {
-  margin-left: 226px; /* if 227px - last li will be pushed to next line */
   font-weight: 400;
 }
 
@@ -100,9 +97,14 @@ main h1 {
 }
 
 /* Home Pgae Main */
+.home-main h1 {
+  text-align: center;
+}
+
 .home-main h3 {
   font-weight: 900;
   font-size: 29px;
+  text-align: center;
 }
 
 .home-main p {
@@ -116,15 +118,15 @@ section {
 }
 
 section #partners {
-  width: 1200px;
+  width: 90%;
   padding: 2em 0 2em 0;
   margin: 0 auto;
   text-align: center;
+  list-style: none;
 }
 
-section #partners .partner {
+section #partners .image-wrapper {
   display: inline-block;
-  margin: 0 0.75em;
   padding: 1.3em 1.5em;
   background-color: #fff;
   border-radius: 50%;
@@ -132,7 +134,6 @@ section #partners .partner {
 
 section #partners .partner img {
   width: 90px;
-  height: 90px;
 }
 
 /* Footer */
@@ -165,9 +166,10 @@ footer #disclaimer p {
 }
 
 footer #nondisclaimer .social .fa {
-  padding: 15px;
+  padding: 13px;
   font-size: 15px;
-  width: 15px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   text-decoration: none;
   margin: 0 4px;
