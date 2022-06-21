@@ -76,28 +76,31 @@
         <form action="/contact" method="post">
           <fieldset>
             <legend>Contact Form</legend>
-            <div class="textbox">
-              <label>Name:</label>
-              <input type="text" name="name" placeholder="John Doe" />
-              <label>Email:</label>
+            <div class="textbox form-group">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name:"
+                class="form-control"
+              />
+
               <input
                 type="email"
                 name="email"
-                placeholder="johndoe@gmail.com"
+                placeholder="Email:"
+                class="form-control"
               />
-              <label>Phone:</label>
-              <input type="text" name="phone" placeholder="xxx-xxx-xxxx" />
+              <input
+                type="text"
+                name="phone"
+                placeholder="Phone:"
+                class="form-control"
+              />
             </div>
 
-            <div class="radios">
-              <label>How should we contact you?</label>
-              <input type="radio" name="contact" value="email" checked />Email
-              <input type="radio" name="contact" value="phone" />Phone
-            </div>
-
-            <div class="selectmenu">
+            <div class="selectmenu form-group">
               <label>Which Cliff are you inquiring?</label>
-              <select>
+              <select class="form-control">
                 <option>West Cliff</option>
                 <option>North Cliff</option>
                 <option>East Cliff</option>
@@ -105,9 +108,18 @@
               </select>
             </div>
 
+
+            <div class="radios">
+              <label>How should we contact you?</label>
+              <div class="form-group">
+                <input type="radio" name="contact" value="email" checked class="mr-1"/><label class="mr-4">Email</label>
+                <input type="radio" name="contact" value="phone" class="mr-1" /><label>Phone</label>
+              </div>
+            </div>
+
             <div class="commentbox">
               <label>How did you hear about us:</label>
-              <textarea></textarea>
+              <textarea class="form-control"></textarea>
             </div>
 
             <!-- Random Codes -->

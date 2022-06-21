@@ -66,7 +66,8 @@
           contact them directly. For a list of activities, please refer to the
           table below:
         </p>
-        <table>
+        <div class="table-responsive">
+        <table class="table">
           <caption>
             Activities at the Cliffs
           </caption>
@@ -117,6 +118,42 @@
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">My selected activities to enquire:</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body"></div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-success"
+                data-dismiss="modal"
+              >
+                Back to Activities
+              </button>
+              <button
+              type="button"
+              class="btn btn-primary"
+              data-dismiss="modal"
+            >
+              Get Info
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
         <div id="displaySelected">
           <div id="result">
