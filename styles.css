@@ -11,7 +11,7 @@ header {
 }
 
 #activities header {
-  background: no-repeat lightgray url(images/runfly.jpeg) 0 -220px;
+  background: no-repeat lightgray url(images/runfly.jpeg);
   background-size: cover;
 }
 
@@ -221,11 +221,12 @@ table {
 
 caption {
   background: #852b1b;
-  height: 40px;
+  height: 50px;
   color: #fff;
   font-size: 1.3em;
   font-weight: bold;
-  padding-top: 1em;
+  caption-side: top;
+  text-align: center;
 }
 
 thead {
@@ -239,10 +240,12 @@ tbody {
 
 th,
 td {
-  width: 225px;
+  min-width: 225px;
   height: 75px;
-  vertical-align: middle;
-  border: solid 1px #852b1b;
+  vertical-align: middle !important;
+  border: solid 1px #852b1b !important;
+  padding: 0 !important;
+  text-align: center;
 }
 
 th:first-child {
@@ -331,8 +334,7 @@ td:first-child {
 
 #contact .textbox input {
   margin-bottom: 10px;
-  width: 500px;
-  height: 20px;
+  max-width: 500px;
 }
 
 #contact .radios,
@@ -342,19 +344,20 @@ td:first-child {
 }
 
 #contact .selectmenu select {
-  width: 170px;
-  text-align: center;
+  /* width: 170px;
+  text-align: center; */
+  max-width: 500px;
 }
 
 #contact .commentbox textarea {
-  display: block;
-  width: 500px;
+  /* display: block; */
+  max-width: 500px;
   height: 250px;
 }
 
 #contact .button {
   display: flex;
-  width: 506px;
+  max-width: 506px;
   justify-content: right;
 }
 
@@ -371,7 +374,7 @@ td:first-child {
 #contact .randomcode {
   display: flex;
   justify-content: right;
-  width: 506px;
+  max-width: 506px;
   margin-bottom: 10px;
 }
 
